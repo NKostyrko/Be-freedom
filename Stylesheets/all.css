@@ -52,7 +52,7 @@ header .social-icons .icons {
   display: inline-block;
   height: 35px;
   width: 35px;
-  background: url(icons/1013-icons-38.jpg);
+  background: url(../icons/1013-icons-38.jpg);
   background-size: 900%;
 }
 header .social-icons .twitter {
@@ -133,14 +133,14 @@ footer .icons-menu a {
   padding: 0;
 }
 footer .icons-menu a:nth-child(2n):before {
-  content: url(icons/facebook.png);
+  content: url(../icons/Facebook.png);
 }
 footer .icons-menu a:nth-child(2n+1)::before {
-  content: url(icons/twitter.png);
+  content: url(../icons/Twitter.png);
 }
 footer .flickr-photostream a:nth-child(2n):before {
-  content: url(icons/accuras.png);
+  content: url(../icons/accuras.png);
 }
 footer .flickr-photostream a:nth-child(2n+1):before {
-  content: url(icons/hello.png);
+  content: url(../icons/hello.png);
 }

@@ -75,7 +75,7 @@ header {
       display: inline-block;
       height: 35px;
       width: 35px;
-      background: url(icons/1013-icons-38.jpg);
+      background: url(../icons/1013-icons-38.jpg);
       background-size: 900%;
     }
     .twitter {
@@ -134,18 +134,18 @@ footer {
       padding: 0;
     }
     a:nth-child(2n):before {
-      content: url(icons/facebook.png);
+      content: url(../icons/Facebook.png);
     }
     a:nth-child(2n+1)::before {
-      content: url(icons/twitter.png);
+      content: url(../icons/Twitter.png);
     }
   }
   .flickr-photostream {
     a:nth-child(2n):before {
-      content: url(icons/accuras.png);
+      content: url(../icons/accuras.png);
     }
     a:nth-child(2n+1):before {
-      content: url(icons/hello.png);
+      content: url(../icons/hello.png);
     }
   }
 }
