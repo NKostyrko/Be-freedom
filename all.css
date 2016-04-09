@@ -1,0 +1,146 @@
+@media (min-width: 1025px) {
+  header, .container-fluid, footer {
+    padding: 0 10%;
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 1024px) {
+  header, .container-fluid, footer {
+    padding: 0 4%;
+    margin: 0 0 10px;
+  }
+}
+
+header .navbar .navbar-header h2 {
+  margin-top: 10px;
+  padding: 0;
+}
+header .navbar .navbar-header small {
+  font-size: 9px;
+}
+header .navbar .nav {
+  font-size: 13px;
+  margin-top: 10px;
+}
+header .navbar .nav .search-image {
+  margin: 7px 0;
+}
+header .navbar .dropdown {
+  margin-top: 10px;
+  padding: 0;
+}
+header .navbar .dropdown .dropdown-menu .navbar-form {
+  margin: 0;
+  padding: 0 10px;
+}
+header .navbar .dropdown .dropdown-menu .navbar-form .form-group {
+  display: inline-block;
+  width: 100px;
+}
+header .navbar .dropdown .dropdown-menu .navbar-form .btn {
+  padding: 4px;
+  margin-bottom: 3px;
+}
+header .navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+}
+header .text-bottom {
+  margin-top: 80px;
+}
+header .social-icons .icons {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: url(icons/1013-icons-38.jpg);
+  background-size: 900%;
+}
+header .social-icons .twitter {
+  background-position: -26px -21px;
+}
+header .social-icons .fb {
+  background-position: -118px -21px;
+}
+header .social-icons .dribbble {
+  background-position: 151px -21px;
+}
+header .social-icons .gp {
+  background-position: 106px -21px;
+}
+header .social-icons .youtube {
+  background-position: -118px -67px;
+}
+
+.container-fluid {
+  background-color: #337ab7;
+}
+.container-fluid .list-inline {
+  margin: 15px 2px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .container-fluid .list-inline {
+    font-size: 10px;
+    margin: 15px 0;
+    padding: 1px;
+  }
+}
+.container-fluid .list-inline a {
+  margin: 15px 2px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .container-fluid .list-inline a {
+    font-size: 10px;
+    margin: 15px 0;
+    padding: 1px;
+  }
+}
+.container-fluid h3 {
+  margin: 15px 2px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .container-fluid h3 {
+    margin: 7px 0;
+  }
+}
+
+footer {
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+footer h4 {
+  margin: 10px 0;
+}
+@media (max-width: 767px) {
+  footer h4 {
+    font-size: 16px;
+    margin: 7px 0;
+  }
+}
+footer .icons-menu a {
+  padding: 0;
+}
+footer .icons-menu a:nth-child(2n):before {
+  content: url(icons/facebook.png);
+}
+footer .icons-menu a:nth-child(2n+1)::before {
+  content: url(icons/twitter.png);
+}
+footer .flickr-photostream a:nth-child(2n):before {
+  content: url(icons/accuras.png);
+}
+footer .flickr-photostream a:nth-child(2n+1):before {
+  content: url(icons/hello.png);
+}

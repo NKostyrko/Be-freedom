@@ -1,0 +1,151 @@
+$medium: 767px;
+$large: 1025px;
+$primary: #337ab7;
+@mixin list-inline {
+  margin: 15px 2px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin small-list-inline {
+  font-size: 10px;
+  margin: 15px 0;
+  padding: 1px;
+}
+
+header, .container-fluid, footer {
+  @media (min-width: $large) {
+    padding: 0 10%;
+    margin: 0 0 30px;
+  }
+  @media (max-width: $large - 1) {
+    padding: 0 4%;
+    margin: 0 0 10px;
+  }
+}
+
+header {
+  .navbar {
+    .navbar-header {
+      h2 {
+        margin-top: 10px;
+        padding: 0;
+      }
+      small {
+        font-size: 9px;
+      }
+    }
+    .nav {
+      font-size: 13px;
+      margin-top: 10px;
+      .search-image {
+        margin: 7px 0;
+      }
+    }
+    .dropdown {
+      margin-top: 10px;
+      padding: 0;
+      .dropdown-menu {
+        .navbar-form {
+          margin: 0;
+          padding: 0 10px;
+          .form-group {
+            display: inline-block;
+            width: 100px;
+          }
+          .btn {
+            padding: 4px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+    }
+  }
+  .text-bottom {
+    margin-top: 80px;
+  }
+  .social-icons {
+    .icons {
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      background: url(icons/1013-icons-38.jpg);
+      background-size: 900%;
+    }
+    .twitter {
+      background-position: -26px -21px;
+    }
+    .fb {
+      background-position: -118px -21px;
+    }
+    .dribbble {
+      background-position: 151px -21px;
+    }
+    .gp {
+      background-position: 106px -21px;
+    }
+    .youtube {
+      background-position: -118px -67px;
+    }
+  }
+}
+
+.container-fluid {
+  background-color: $primary;
+  .list-inline {
+    @include list-inline;
+    @media (max-width: $medium) {
+      @include small-list-inline;
+    }
+    a {
+      @include list-inline;
+      @media (max-width: $medium) {
+        @include small-list-inline;
+      }
+    }
+  }
+  h3 {
+    @include list-inline;
+    font-size: 16px;
+    @media (max-width: $medium) {
+      margin: 7px 0;
+    }
+  }
+}
+
+footer {
+  margin-bottom: 15px;
+  font-size: 11px;
+  h4 {
+    margin: 10px 0;
+    @media (max-width: $medium) {
+      font-size: 16px;
+      margin: 7px 0;
+    }
+  }
+  .icons-menu {
+    a {
+      padding: 0;
+    }
+    a:nth-child(2n):before {
+      content: url(icons/facebook.png);
+    }
+    a:nth-child(2n+1)::before {
+      content: url(icons/twitter.png);
+    }
+  }
+  .flickr-photostream {
+    a:nth-child(2n):before {
+      content: url(icons/accuras.png);
+    }
+    a:nth-child(2n+1):before {
+      content: url(icons/hello.png);
+    }
+  }
+}
